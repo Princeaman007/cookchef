@@ -7,8 +7,8 @@ function App() {
   return(
     <div className= {`d-flex flex-column ${style.appContenair}`}>
       <Header/>
-      {/*
-      <Content/> */}
+      {
+      <Content/> }
       <Footer/>
       
     
