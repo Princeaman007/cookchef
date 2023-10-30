@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c752f0e.css",
-    "main.js": "/static/js/main.283a4af9.js",
-    "static/js/787.4cbd0921.chunk.js": "/static/js/787.4cbd0921.chunk.js",
-    "static/media/cookchef.jpg": "/static/media/cookchef.eef204a629ab6d3977eb.jpg",
-    "static/media/Poulet au curry.jpg": "/static/media/Poulet au curry.77b818ccda53cf4d6339.jpg",
-    "index.html": "/index.html",
-    "main.7c752f0e.css.map": "/static/css/main.7c752f0e.css.map",
-    "main.283a4af9.js.map": "/static/js/main.283a4af9.js.map",
-    "787.4cbd0921.chunk.js.map": "/static/js/787.4cbd0921.chunk.js.map"
+    "main.css": "/cookchef/static/css/main.7c752f0e.css",
+    "main.js": "/cookchef/static/js/main.86c02e33.js",
+    "static/js/787.4cbd0921.chunk.js": "/cookchef/static/js/787.4cbd0921.chunk.js",
+    "static/media/cookchef.jpg": "/cookchef/static/media/cookchef.eef204a629ab6d3977eb.jpg",
+    "static/media/Poulet au curry.jpg": "/cookchef/static/media/Poulet au curry.77b818ccda53cf4d6339.jpg",
+    "index.html": "/cookchef/index.html",
+    "main.7c752f0e.css.map": "/cookchef/static/css/main.7c752f0e.css.map",
+    "main.86c02e33.js.map": "/cookchef/static/js/main.86c02e33.js.map",
+    "787.4cbd0921.chunk.js.map": "/cookchef/static/js/787.4cbd0921.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c752f0e.css",
-    "static/js/main.283a4af9.js"
+    "static/js/main.86c02e33.js"
   ]
 }
