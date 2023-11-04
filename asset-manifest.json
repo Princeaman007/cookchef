@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cookchef/static/css/main.84ca34b1.css",
-    "main.js": "/cookchef/static/js/main.968a3cfe.js",
+    "main.css": "/cookchef/static/css/main.612b79da.css",
+    "main.js": "/cookchef/static/js/main.90e1f9cc.js",
     "static/js/787.4cbd0921.chunk.js": "/cookchef/static/js/787.4cbd0921.chunk.js",
     "static/media/logo.jpg": "/cookchef/static/media/logo.6184532be750d156da2c.jpg",
     "index.html": "/cookchef/index.html",
-    "main.84ca34b1.css.map": "/cookchef/static/css/main.84ca34b1.css.map",
-    "main.968a3cfe.js.map": "/cookchef/static/js/main.968a3cfe.js.map",
+    "main.612b79da.css.map": "/cookchef/static/css/main.612b79da.css.map",
+    "main.90e1f9cc.js.map": "/cookchef/static/js/main.90e1f9cc.js.map",
     "787.4cbd0921.chunk.js.map": "/cookchef/static/js/787.4cbd0921.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84ca34b1.css",
-    "static/js/main.968a3cfe.js"
+    "static/css/main.612b79da.css",
+    "static/js/main.90e1f9cc.js"
   ]
 }
