@@ -8,7 +8,7 @@ function Content(){
 
     return  <div className=" flex-fill container p-20 ">
                 <h1 className= "my-30"> Découvez nos nouvelles recettes</h1>
-                <div className ={`card p-20 ${ style.contentCard} br`}>
+                <div className ={`card p-20 ${ style.contentCard}`}>
                     <div className={style.grid}>
                        { recipes.map((r)=>(
                         <Recipe key={r._id}  title ={r.title} image ={r.image} />
