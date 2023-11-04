@@ -1,6 +1,6 @@
 
 import style from "./Header.module.scss";
-import logo from "../assets/images/cookchef.jpg";
+import logo from "../assets/images/logo.jpg";
 function Header() {
     return (
         <header className={`${ style.header} d-flex flex-row align-itmes-center`}>
