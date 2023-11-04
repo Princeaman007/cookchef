@@ -1,21 +1,38 @@
 
 import style from "./Header.module.scss";
 import logo from "../assets/images/logo.jpg";
+import { useState } from "react";
+import HeaderMenu from "./HeaderMenu";
+
 function Header() {
+
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
+
         <header className={`${ style.header} d-flex flex-row align-itmes-center`}>
-            <i class="fa-solid fa-bars mr-5 m-20"></i>
+           
             <div className="flex-fill">
                 <img src={logo} alt="logo cookchef" />
             </div>
-            <ul className="m-20">
+            <ul className= {`${style.headerList} mb-20`}>
                 <button className="mr-5 btn btn-reverse-primary">
-                    <i class="fa-solid fa-cart-shopping mr-5"></i>
-                    <span>panier</span>  
+                    <i class="fa-solid fa-solid fa-heart mr-5"></i>
+                    <span>Wishlist</span>  
                 </button>
                 <button className=" btn btn-primary">Connexion</button>
             </ul>
+            <i onClick={() => setShowMenu(true)} class= { `fa-solid fa-bars ${style.headerXs}` }></i>
+            {showMenu && (
+                <>
+                <div onClick={() =>setShowMenu(false)} className="clac"></div>
+                    <HeaderMenu/>
+                
+                </>
 
+            
+            
+            )}
         </header>
     );
 }
