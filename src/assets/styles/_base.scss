@@ -26,5 +26,13 @@ body {
 
   img{
      max-width: 100%;
+     
+  }
+
+  ::placeholder{
+   font-family: var(--font-family);
+  }
+  input{
+   font-family: var(--font-family);
   }
 

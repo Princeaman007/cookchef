@@ -15,14 +15,14 @@ function Header() {
             <div className="flex-fill">
                 <img src={logo} alt="logo cookchef" />
             </div>
-            <ul className= {`${style.headerList} mb-20`}>
-                <button className="mr-5 btn btn-reverse-primary">
-                    <i class="fa-solid fa-solid fa-heart mr-5"></i>
+            <ul className= {style.headerList} >
+                <button className="mr-5   btn btn-reverse-primary">
+                    <i className="fa-solid fa-solid fa-heart mr-5"></i>
                     <span>Wishlist</span>  
                 </button>
                 <button className=" btn btn-primary">Connexion</button>
             </ul>
-            <i onClick={() => setShowMenu(true)} class= { `fa-solid fa-bars ${style.headerXs}` }></i>
+            <i onClick={() => setShowMenu(true)} className= { `fa-solid fa-bars ${style.headerXs}` }></i>
             {showMenu && (
                 <>
                 <div onClick={() =>setShowMenu(false)} className="clac"></div>
