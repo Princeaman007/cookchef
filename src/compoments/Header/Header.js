@@ -1,8 +1,8 @@
 
-import style from "./Header.module.scss";
-import logo from "../assets/images/logo.jpg";
+import style from "../Header/Header.module.scss";
+import logo from "../../assets/images/logo.jpg";
 import { useState } from "react";
-import HeaderMenu from "./HeaderMenu";
+import HeaderMenu from "../Header/HeaderMenu";
 
 function Header() {
 

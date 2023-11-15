@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./recipe.module.scss";
+import style from "../recipe.module.scss";
 
 function Recipe({ title , image }) {
 
