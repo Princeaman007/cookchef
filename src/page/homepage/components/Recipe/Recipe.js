@@ -1,12 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import style from "../recipe.module.scss";
 import { ApiContext } from "../../../../Context/ApiContext";
 
-function Recipe({ recipe: {_id, title,image, liked}, toggleLikeRecipe }) {
+function Recipe({ recipe: {_id, title,image, liked}, toggleLikeRecipe, deleteRecipe, }) {
     const BASE_URL_API = useContext(ApiContext);
 
 
-   async function handleClick(){
+   async function handleClickLike(){
     try {
         const response = await fetch(`${BASE_URL_API}/${_id}`,{
 
@@ -26,10 +26,29 @@ function Recipe({ recipe: {_id, title,image, liked}, toggleLikeRecipe }) {
     } catch (e) {
         console.log("Erreur");
     }
-           
+}
+
+    async function handleDlickDelete(e){
+        e.stopPropagation();
+        try{
+            const response = await fetch ( `${BASE_URL_API}/${_id}`,
+            {method: 'DELETE'}
+            );
+            if(response.ok){
+                deleteRecipe(_id);
+            }
+            } catch(e){
+            console.log('Erreur');
+        }
+
+
     }
+    
+           
+    
     return (
-        <div onClick={handleClick} className={style.recipe}  >
+        <div onClick={handleClickLike} className={style.recipe} >
+            <i onClick={handleDlickDelete} className="fa-solid fa-xmark"></i>
             <div className={style.imageContenair}>
                 <img src={image} alt="recipe"/>
 

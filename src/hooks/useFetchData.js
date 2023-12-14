@@ -14,6 +14,7 @@ export function useFetchData(url, page) {
         if (page) {
           queryParam.append('limit', 18);
           queryParam.append('skip', (page - 1) * 18);
+          queryParam.append('sort', 'createdAt:-1');
         }
         const response = await fetch(url + `?${queryParam}`);
         if (response.ok && !cancel) {

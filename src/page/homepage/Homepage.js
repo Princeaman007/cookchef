@@ -21,6 +21,9 @@ function Homepage() {
         setRecipes(recipes.map( r => r._id === updatedRecipe._id ? updatedRecipe : r ))
     }
 
+    function deleteRecipe(_id){
+        setRecipes(recipes.filter((r) => r._id !==_id));
+    }
 
 
     // function 
@@ -36,7 +39,9 @@ function Homepage() {
                     {isLoading && !recipes.length ? (<Loading/>): 
                     <div className={style.grid}>
                     {recipes.filter( r => r.title.toLowerCase().startsWith(filter) ).map((r)=>(
-                     <Recipe key={r._id}  recipe ={ r } toggleLikeRecipe= {updateRecipe}/>
+                     <Recipe key={r._id}  recipe ={ r }
+                     deleteRecips = {deleteRecipe}
+                      toggleLikeRecipe= {updateRecipe}/>
                      ))}
                  </div>}
                  

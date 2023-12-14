@@ -3,14 +3,18 @@ import Homepage from "./page/homepage/Homepage";
 import Footer from  "./compoments/Footer/Footer";
 import style from "./App.module.scss";
 import {seedRecipes} from "./data/seed";
+import { useState } from "react";
+import Admin from "./page/Admin/Admin";
 
 seedRecipes();
 
 function App() {
+  const [page,setPage ] = useState("Homepage")
   return(
     <div className= {`d-flex flex-column ${style.appContenair}`}>
-      <Header/>
-      <Homepage/> 
+      <Header setPage = {setPage} />
+      {page === 'Homepage' && <Homepage/> }
+      {page === "Admin" && <Admin/>}
       <Footer/>
       
     
