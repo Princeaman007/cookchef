@@ -4,7 +4,7 @@ import Footer from  "./compoments/Footer/Footer";
 import style from "./App.module.scss";
 import {seedRecipes} from "./data/seed";
 import { useState } from "react";
-import Admin from "./page/Admin/Admin";
+import Admin from "./Admin/Admin";
 
 seedRecipes();
 

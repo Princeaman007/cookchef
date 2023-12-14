@@ -3,7 +3,7 @@ import * as yup from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useContext } from 'react';
-import { ApiContext } from '../../Context/ApiContext';
+import { ApiContext } from '../Context/ApiContext';
 
 function RecipeForm() {
   const BASE_URL = useContext(ApiContext);
